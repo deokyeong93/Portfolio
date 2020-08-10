@@ -42,6 +42,7 @@ nav.navbar {
   background-color: var(--color-light-blueblack);
   color: var(--color-white);
   padding: var(--space-regular);
+  width: 100%;
 }
 
 .navbar__left {
@@ -70,10 +71,11 @@ nav.navbar {
   flex-direction: column;
   align-items: center;
   justify-content: center;
+  width: 100%;
 }
 
 .home h1 {
-  font-size: var(--font-larger);
+  font-size: var(--font-medium);
   margin: var(--space-larger) 0;
 }
 
@@ -84,4 +86,179 @@ nav.navbar {
   border: 2px white solid;
   background-color: transparent;
   color: white;
+}
+
+/* About */
+
+.about {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  align-items: center;
+  width: 848px;
+  margin: 0 auto;
+}
+
+.about h2 {
+  padding: var(--space-larger);
+  font-size: var(--font-medium);
+  font-weight: var(--weight-bold);
+}
+
+.advantages {
+  display: flex;
+  width: 100%;
+  flex-wrap: wrap;
+}
+
+.advantages li {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 0 var(--space-medium);
+}
+
+.icon__box {
+  height: 148px;
+  width: 148px;
+  position: relative;
+  background-color: var(--color-light-greenblue);
+  border-radius: 50%;
+  color: white;
+}
+
+.fas.fa-tachometer-alt {
+  background-color: transparent;
+  font-size: var(--font-larger);
+  position: absolute;
+  top: 50px;
+  right: 47px;
+}
+
+.fas.fa-laptop-house {
+  background-color: transparent;
+  font-size: var(--font-larger);
+  position: absolute;
+  top: 50px;
+  right: 44px;
+}
+
+.fas.fa-tasks {
+  background-color: transparent;
+  font-size: var(--font-larger);
+  position: absolute;
+  top: 50px;
+  right: 50px;
+}
+
+.fas.fa-handshake {
+  background-color: transparent;
+  font-size: var(--font-larger);
+  position: absolute;
+  top: 50px;
+  right: 44px;
+}
+
+.advantages li h3 {
+  color: var(--color-grey);
+  padding: var(--space-small);
+}
+
+.advantages li p {
+  color: var(--color-grey);
+  font-size: var(--font-small);
+  font-weight: var(--weight-lighter);
+  padding: 0 0 calc(var(--space-larger) * 1.5) 0;
+}
+
+.profile {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+
+.profile__left {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 50%;
+}
+
+.profile__left img {
+  width: 240px;
+  height: 240px;
+  border-radius: 50%;
+}
+
+.profile__left h3 {
+  padding: var(--space-regular) 0;
+  font-weight: var(--weight-bold);
+}
+
+.profile__left p {
+  font-size: var(--font-small);
+  color: var(--color-grey);
+  font-weight: var(--weight-lighter);
+}
+
+.profile__right {
+  width: 50%;
+  height: 240px;
+}
+.profile__right ul {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: space-between;
+  height: 100%;
+}
+
+.profile__right li {
+  width: 100%;
+  display: flex;
+  position: relative;
+  line-height: 32px;
+  height: var(--space-medium);
+  background-color: var(--color-light-grey);
+}
+
+.profile__right span {
+  position: absolute;
+  right: 0;
+}
+
+.skill div {
+  height: 100%;
+}
+
+div.skill__name {
+  width: 20%;
+  text-align: center;
+  background-color: var(--color-light-greenblue);
+  color: white;
+}
+
+.skill__html {
+  width: 30%;
+  background-color: var(--color-deep-greenblue);
+}
+
+.skill__css {
+  width: 30%;
+  background-color: var(--color-deep-greenblue);
+}
+
+.skill__javascript {
+  width: 8%;
+  background-color: var(--color-deep-greenblue);
+}
+
+.skill__react {
+  width: 3%;
+  background-color: var(--color-deep-greenblue);
+}
+
+.skill__python {
+  width: 3%;
+  background-color: var(--color-deep-greenblue);
 }
