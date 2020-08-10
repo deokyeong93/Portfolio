@@ -76,7 +76,12 @@ nav.navbar {
 
 .home h1 {
   font-size: var(--font-medium);
-  margin: var(--space-larger) 0;
+  margin: var(--space-larger) auto;
+}
+
+.highlight {
+  color: #e31c6d;
+  display: inline-block;
 }
 
 .home button {
@@ -92,7 +97,6 @@ nav.navbar {
 
 .about {
   display: flex;
-  flex-wrap: wrap;
   flex-direction: column;
   align-items: center;
   width: 848px;
