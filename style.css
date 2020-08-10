@@ -266,3 +266,42 @@ div.skill__name {
   width: 3%;
   background-color: var(--color-deep-greenblue);
 }
+
+/* Projects */
+
+.projects {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  margin: 0 auto;
+  background-color: var(--color-light-grey);
+}
+
+.projects h2 {
+  padding: var(--space-larger);
+  font-size: var(--font-medium);
+  font-weight: var(--weight-bold);
+}
+
+.project__bar {
+  display: flex;
+  width: 375px;
+  justify-content: space-around;
+}
+
+.project__bar li {
+  width: 30%;
+  padding: var(--space-micro);
+  text-align: center;
+  font-weight: var(--weight-lighter);
+}
+
+.project__bar li:hover {
+  background-color: var(--color-deep-pink);
+}
+
+.project__image img {
+  width: 240px;
+  heigth: 240px;
+}
