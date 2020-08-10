@@ -305,3 +305,26 @@ div.skill__name {
   width: 240px;
   heigth: 240px;
 }
+
+/* Contact */
+
+.contact {
+  width: 100%;
+  background-color: var(--color-deep-blueblack);
+  height: 240px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  color: var(--color-white);
+}
+
+.contact h2 {
+  padding: var(--space-larger);
+  font-size: var(--font-medium);
+  font-weight: var(--weight-bold);
+}
+
+.contact__route p {
+  padding: calc(var(--space-micro) / 2) 0;
+  font-size: var(--space-regular);
+}
