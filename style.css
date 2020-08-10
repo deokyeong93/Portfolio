@@ -18,6 +18,7 @@
   --color-deep-greenblue: #09a1a6;
   --color-grey: #44474a;
   --color-light-grey: #f5f5f5;
+  --color-yellow: #c9bc1f;
 
   /* Space */
   --space-larger: 48px;
@@ -31,4 +32,31 @@
   --weight-semi-bold: 600;
   --weight-regular: 400;
   --weight-lighter: 200;
+}
+
+/* Navigation bar */
+
+nav.navbar {
+  display: flex;
+  justify-content: space-between;
+  background-color: var(--color-light-blueblack);
+  color: var(--color-white);
+  padding: var(--space-regular);
+}
+
+.navbar__left {
+  display: inline-block;
+  color: var(--color-white);
+  font-size: calc(var(--font-small) * 1.5);
+}
+
+.navbar__right {
+  display: flex;
+  margin: auto 0;
+}
+
+.navbar__right li {
+  font-size: var(--font-regular);
+  padding: 0 var(--space-regular);
+  font-size: calc(var(--font-small) * 1.5);
 }
