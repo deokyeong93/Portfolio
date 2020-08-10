@@ -274,7 +274,6 @@ div.skill__name {
   flex-direction: column;
   align-items: center;
   width: 100%;
-  margin: 0 auto;
   background-color: var(--color-light-grey);
 }
 
@@ -288,6 +287,7 @@ div.skill__name {
   display: flex;
   width: 375px;
   justify-content: space-around;
+  margin-bottom: var(--space-regular);
 }
 
 .project__bar li {
@@ -301,9 +301,14 @@ div.skill__name {
   background-color: var(--color-deep-pink);
 }
 
+.image {
+  display: flex;
+  height: 240px;
+}
+
 .project__image img {
   width: 240px;
-  heigth: 240px;
+  height: 240px;
 }
 
 /* Contact */
