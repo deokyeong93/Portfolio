@@ -43,6 +43,12 @@ nav.navbar {
   color: var(--color-white);
   padding: var(--space-regular);
   width: 100%;
+  position: fixed;
+  /* sticky(tblr필수 지정)로도 할 수 있지만(스크롤박스 전용) 뷰 포트내에서 고정하면 되는 네비게이션 바라서
+  그냥 fixed로 고정하였다. */
+  z-index: 1;
+  /* position 성질을 줄 때는 z-index 고려해주자!
+     안 넣으면 뒤로 넘어감... 숫자가 클수록 높이 떠 있는거 */
 }
 
 .navbar__left {
