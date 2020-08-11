@@ -70,7 +70,7 @@ nav.navbar {
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  width: 100%;
+  min-height: 600px;
 }
 
 .home h1 {
@@ -111,32 +111,36 @@ nav.navbar {
 }
 
 /* About */
-
 .about {
+  min-height: 600px;
+}
+
+.about__container {
   display: flex;
   flex-direction: column;
   align-items: center;
-  width: 848px;
+  max-width: 848px;
   margin: 0 auto;
 }
 
 .about h2 {
-  padding: var(--space-larger);
+  padding: var(--space-medium);
   font-size: var(--font-medium);
   font-weight: var(--weight-bold);
 }
 
 .advantages {
   display: flex;
-  width: 100%;
+  max-width: 100%;
   flex-wrap: wrap;
+  justify-content: center;
 }
 
 .advantages li {
   display: flex;
   flex-direction: column;
   align-items: center;
-  padding: 0 var(--space-medium);
+  padding: var(--space-medium);
 }
 
 .icon__box {
@@ -195,14 +199,15 @@ nav.navbar {
 .profile {
   width: 100%;
   display: flex;
-  justify-content: space-between;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  padding-bottom: var(--space-larger);
 }
 
 .profile__left {
   display: flex;
   flex-direction: column;
   align-items: center;
-  width: 50%;
 }
 
 .profile__left img {
@@ -220,10 +225,11 @@ nav.navbar {
   font-size: var(--font-small);
   color: var(--color-grey);
   font-weight: var(--weight-lighter);
+  margin-bottom: var(--space-larger);
 }
 
 .profile__right {
-  width: 50%;
+  width: 424px;
   height: 240px;
 }
 .profile__right ul {
@@ -290,7 +296,7 @@ div.skill__name {
   display: flex;
   flex-direction: column;
   align-items: center;
-  width: 100%;
+  max-width: 100%;
   background-color: var(--color-light-grey);
 }
 
