@@ -121,6 +121,7 @@ nav.navbar {
   align-items: center;
   max-width: 848px;
   margin: 0 auto;
+  padding-bottom: var(--space-larger);
 }
 
 .about h2 {
@@ -201,7 +202,6 @@ nav.navbar {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-around;
-  padding-bottom: var(--space-larger);
 }
 
 .profile__left {
@@ -293,11 +293,18 @@ div.skill__name {
 /* Projects */
 
 .projects {
+  background-color: var(--color-light-grey);
+  display: flex;
+  flex-direction: column;
+}
+
+.projects__container {
   display: flex;
   flex-direction: column;
   align-items: center;
-  max-width: 100%;
-  background-color: var(--color-light-grey);
+  max-width: 848px;
+  margin: 0 auto;
+  padding-bottom: var(--space-larger);
 }
 
 .projects h2 {
@@ -324,32 +331,38 @@ div.skill__name {
   background-color: var(--color-deep-pink);
 }
 
-.image {
+.projects__box {
   display: flex;
-  height: 240px;
+  justify-content: center;
+  flex-wrap: wrap;
+  max-width: 719px;
 }
 
-.project__image img {
+.projects__box img {
   width: 240px;
   height: 240px;
+  display: block;
 }
-
 /* Contact */
 
 .contact {
-  width: 100%;
   background-color: var(--color-deep-blueblack);
-  height: 240px;
+  color: var(--color-white);
+  padding: var(--space-larger) 0;
+}
+
+.contact__container {
   display: flex;
   flex-direction: column;
   align-items: center;
-  color: var(--color-white);
+  margin: 0 auto;
+  max-width: 848px;
 }
 
 .contact h2 {
-  padding: var(--space-larger);
   font-size: var(--font-medium);
   font-weight: var(--weight-bold);
+  padding-bottom: var(--space-medium);
 }
 
 .contact__route p {
