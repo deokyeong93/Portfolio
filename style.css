@@ -64,8 +64,7 @@ nav.navbar {
 
 /* Home */
 .home {
-  background-image: url(./Img/background.jpg);
-  background-repeat: no-repeat;
+  background: url(./Img/background.jpg) no-repeat center / cover;
   color: white;
   display: flex;
   flex-direction: column;
@@ -76,7 +75,7 @@ nav.navbar {
 
 .home h1 {
   font-size: var(--font-medium);
-  margin: var(--space-larger) auto;
+  margin: 0 auto;
 }
 
 .highlight {
@@ -91,6 +90,24 @@ nav.navbar {
   border: 2px white solid;
   background-color: transparent;
   color: white;
+}
+
+.home button:hover {
+  cursor: pointer;
+  border-radius: 5px;
+  border: 2px var(--color-light-greenblue) solid;
+  background-color: var(--color-light-greenblue);
+  transition: all 0.5s;
+}
+.home button:hover i {
+  transform: rotate(90deg);
+  transition: all 0.5s;
+}
+
+@media screen and (max-width: 480px) {
+  .home > h1 {
+    font-size: calc(var(--font-small) * 2);
+  }
 }
 
 /* About */
