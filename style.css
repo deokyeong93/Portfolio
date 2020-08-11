@@ -64,13 +64,33 @@ nav.navbar {
 
 .navbar__right li {
   font-size: var(--font-regular);
-  padding: 0 var(--space-regular);
+  padding: 0 var(--space-small);
   font-size: calc(var(--font-small) * 1.5);
+}
+
+.navbar__right button {
+  background-color: var(--color-light-blueblack);
+  color: var(--color-white);
+  font-size: var(--font-regular);
+  font-size: calc(var(--font-small) * 1.5);
+  outline: 0;
+  border: 0;
+}
+
+.navbar__right button:active {
+  color: var(--color-deep-pink);
+  transition: 0.5s;
+  cursor: pointer;
+}
+
+.navbar__left:hover {
+  color: var(--color-deep-pink);
+  transition: 0.5s;
 }
 
 /* Home */
 .home {
-  background: url(./Img/background.jpg) no-repeat center / cover;
+  background: url(./Img/background.jpg) repeat center / cover;
   color: white;
   display: flex;
   flex-direction: column;
@@ -321,20 +341,22 @@ div.skill__name {
 
 .project__bar {
   display: flex;
-  width: 375px;
   justify-content: space-around;
   margin-bottom: var(--space-regular);
 }
 
 .project__bar li {
-  width: 30%;
   padding: var(--space-micro);
+  border-radius: 5px;
+  width: 100px;
   text-align: center;
+  font-size: var(--font-regular);
   font-weight: var(--weight-lighter);
 }
 
 .project__bar li:hover {
   background-color: var(--color-deep-pink);
+  transition: all 0.5s;
 }
 
 .projects__box {
