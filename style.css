@@ -211,6 +211,16 @@ nav.navbar {
   right: 44px;
 }
 
+ul.advantages li:hover {
+  transform: scale(1.5);
+}
+
+.advantages li:hover i {
+  transform: scale(2) rotate(360deg);
+  color: var(--color-deep-pink);
+  transition: all 1s;
+}
+
 .advantages li h3 {
   color: var(--color-grey);
   padding: var(--space-small);
