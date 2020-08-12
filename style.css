@@ -60,6 +60,11 @@ nav.navbar {
 .navbar__right {
   display: flex;
   margin: auto 0;
+  position: relative;
+}
+
+.fa-bars {
+  display: none;
 }
 
 .navbar__right li {
@@ -130,9 +135,16 @@ nav.navbar {
   transition: all 0.5s;
 }
 
-@media screen and (max-width: 480px) {
+@media screen and (max-width: 720px) {
   .home > h1 {
     font-size: calc(var(--font-small) * 2);
+  }
+
+  .navbar__right li {
+    display: none;
+  }
+  .fa-bars {
+    display: unset;
   }
 }
 
