@@ -73,16 +73,15 @@ nav.navbar {
   font-size: calc(var(--font-small) * 1.5);
 }
 
-.navbar__right button {
+.navbar__right a {
   background-color: var(--color-light-blueblack);
   color: var(--color-white);
   font-size: var(--font-regular);
   font-size: calc(var(--font-small) * 1.5);
-  outline: 0;
-  border: 0;
+  text-decoration: none;
 }
 
-.navbar__right button:active {
+.navbar__right a:active {
   color: var(--color-deep-pink);
   transition: 0.5s;
   cursor: pointer;
@@ -121,6 +120,7 @@ nav.navbar {
   border: 2px white solid;
   background-color: transparent;
   color: white;
+  outline: none;
 }
 
 .home button:hover {
